@@ -5,9 +5,11 @@ let collatz = number => {
         if (number.modulo(BigInt("2")).isEqualTo(BigInt("0"))) {
             number = number.dividedBy(BigInt("2"));
         } else {
-            //finish
+            number = number.multiply(BigInt("3")).plus(BigInt("1")).divideBy(BigInt("2"));
         }
     }
+
+    return counter;
 };
 
 //? Java code to convert
