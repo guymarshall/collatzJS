@@ -1,3 +1,15 @@
+let collatz = number => {
+    let counter = BigInt("0");
+    while (number.comparedTo(BigInt("0")) > 0) {
+        counter = counter.plus(BigInt("1"));
+        if (number.modulo(BigInt("2")).isEqualTo(BigInt("0"))) {
+            number = number.dividedBy(BigInt("2"));
+        } else {
+            //finish
+        }
+    }
+};
+
 //? Java code to convert
 /*
 static NumberFormat formatter = new DecimalFormat("0.######E0", DecimalFormatSymbols.getInstance(Locale.ROOT));
