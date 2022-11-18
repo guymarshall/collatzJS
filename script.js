@@ -1,3 +1,4 @@
+//? Java code to convert
 /*
 static NumberFormat formatter = new DecimalFormat("0.######E0", DecimalFormatSymbols.getInstance(Locale.ROOT));
 public static BigInteger collatz(BigInteger number) {
@@ -20,5 +21,31 @@ public static void main(String[] args) {
 
     String resultFormatted = formatter.format(userInput);
     System.out.printf("%s had %d steps%n", resultFormatted, collatz(userInput));
+}
+*/
+
+//? Code to interact with HTML
+/*
+let linebreakHTML = '<br>';
+
+document.getElementById('button').addEventListener('click', function() {
+  let number = document.getElementById('number').value;
+  let resultDiv = document.getElementById('result');
+  resultDiv.innerHTML= '';
+
+  while (number > 10) {
+    let digits = splitStringIntoCharacters(number);
+    let sum = 1;
+    for (let i = 0; i < digits.length; i++) {
+      sum *= Number(digits[i]);
+    }
+    number = sum.toString();
+    resultDiv.innerHTML += number;
+    resultDiv.innerHTML += linebreakHTML;  
+  }
+});
+
+function splitStringIntoCharacters(input) {
+  return input.split('');
 }
 */
