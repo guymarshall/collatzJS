@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title></title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Collatz</title>
     </head>
     <body>
-        <h1>Calculate the multiplicative persistence up to the number you enter.</h1>
-        <h3>The largest found so far: 277777788888899</h3>
-        <br>
-        <input type="number" name="number" id="number">
-        <button type="button" name="button" id="button">Calculate</button>
-        <br>
-        <h1>Results:</h1>
-        <div id="result"></div>
-        <script src="script.js" charset="utf-8"></script>
+        <section id="heading">
+            <h1>Calculate the number of steps in the Collatz Conjecture for the number you enter.</h1>
+            <h3>9.980052E60205 had 1728481 steps</h3>
+        </section>
+        <section id="inputs">
+            <input type="number" name="number" id="number">
+            <button type="button" name="button" id="button">Calculate</button>
+        </section>
+        <section id="result">
+            <h1>Results:</h1>
+            <div id="result"></div>
+        </section>
     </body>
 </html>
+
