@@ -1,11 +1,11 @@
-let collatz = number => {
+let collatz = input => {
     let counter = BigInt("0");
-    while (number.comparedTo(BigInt("0")) > 0) {
+    while (input.comparedTo(BigInt("0")) > 0) {
         counter = counter.plus(BigInt("1"));
-        if (number.modulo(BigInt("2")).isEqualTo(BigInt("0"))) {
-            number = number.dividedBy(BigInt("2"));
+        if (input.modulo(BigInt("2")).isEqualTo(BigInt("0"))) {
+            input = input.dividedBy(BigInt("2"));
         } else {
-            number = number.multiply(BigInt("3")).plus(BigInt("1")).divideBy(BigInt("2"));
+            input = input.multiply(BigInt("3")).plus(BigInt("1")).divideBy(BigInt("2"));
         }
     }
 
